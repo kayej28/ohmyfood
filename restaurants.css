@@ -1,0 +1,30 @@
+.restaurant-placement {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media (max-width: 1300px) {
+  .restaurant-placement {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.menilmontant {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+  background-position: 50%;
+  height: 15rem;
+}
+.image-resto {
+  border-radius: 1rem;
+  box-shadow: 0 0 16px #0000002e;
+}
+.texte-resto {
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+  margin-left: 1rem;
+}
+.texte-resto h3{
+  margin-top: 0;
+}

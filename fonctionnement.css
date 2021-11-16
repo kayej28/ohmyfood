@@ -1,0 +1,43 @@
+.list-fonctionnement {
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  counter-reset: etapes;
+}
+.list-fonctionnement p{
+  position: relative;
+}
+.list-fonctionnement p::before{
+  content: counter(etapes);
+  counter-increment: etapes;
+  background-color: pink;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+}
+@media (max-width: 1300px) {
+  .list-fonctionnement {
+    flex-direction: column;
+  }
+}
+.list-fonctionnement-resto {
+  padding: 2.5rem 1rem;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 1rem;
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
+  display: flex;
+  gap: 1rem;
+}
+.list-fonctionnement-resto:hover {
+  transform: scale(1.03);
+  background: linear-gradient(rgb(250, 219, 224), rgb(206, 171, 206));
+  transition: 200ms;
+}
