@@ -14,7 +14,7 @@
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
   background-position: 50%;
-  height: 15rem;
+  height: 20rem;
 }
 .image-resto {
   border-radius: 1rem;
@@ -23,8 +23,37 @@
 .texte-resto {
   background-color: white;
   border-radius: 0 0 1rem 1rem;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
+  font-size: 1.3rem;
+  position: relative;
 }
-.texte-resto h3{
+.texte-resto h3 {
   margin-top: 0;
+}
+.texte-resto p {
+  margin-bottom: 0.5rem;
+}
+.coeur-resto {
+  flex: 1 1 auto;
+  text-align: end;
+  padding-right: 0.5rem;
+  position: absolute;
+  right: 1rem;
+  top: 30%;
+  font-size: 3rem;
+}
+.coeur-resto:hover {
+  transform: scale(1.04);
+  transition: 200ms;
+}
+.les-images-resto h4{
+  position: absolute;
+  color: rgba(0, 0, 0, 0.61);
+  right: 1rem;
+  background-color: #99e2d0;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+.les-images-resto{
+  position: relative;
 }
