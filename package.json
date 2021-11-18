@@ -1,0 +1,22 @@
+{
+  "name": "oh-my-food",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass style.scss style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kayej28/ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kayej28/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/kayej28/ohmyfood#readme",
+  "dependencies": {
+    "sass": "^1.43.4"
+  }
+}

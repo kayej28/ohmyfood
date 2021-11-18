@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700;900&family=Shrikhand&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  margin: 0 10rem;
+}
+
+@media (max-width: 1300px) {
+  main {
+    margin: 0 1rem;
+  }
+}
+main h2 {
+  margin: 3rem 0 1rem;
+  font-size: 2rem;
+}
+
+.list-fonctionnement {
+  font-size: 1.4rem;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  counter-reset: etapes;
+}
+
+.list-fonctionnement p {
+  position: relative;
+}
+
+.list-fonctionnement p::before {
+  content: counter(etapes);
+  counter-increment: etapes;
+  background-color: #9356dc;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1300px) {
+  .list-fonctionnement {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 3rem;
+    font-size: 1.4rem;
+  }
+}
+.list-fonctionnement-resto {
+  padding: 2rem 2rem;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 1rem;
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
+  display: flex;
+  gap: 1rem;
+  flex-basis: 20rem;
+}
+
+@media (max-width: 1300px) {
+  .list-fonctionnement-resto {
+    flex-basis: 1rem;
+  }
+}
+.list-fonctionnement-resto:hover {
+  transform: scale(1.03);
+  background: linear-gradient(#dea5ff, #ceabce);
+  transition: 200ms;
+}
+
+.restaurant-placement {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 1300px) {
+  .restaurant-placement {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.menilmontant {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+  background-position: 50%;
+  height: 20rem;
+}
+
+.image-resto {
+  border-radius: 1rem;
+  box-shadow: 0 0 16px #0000002e;
+}
+
+.texte-resto {
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+  margin-left: 0.5rem;
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.texte-resto h3 {
+  margin-top: 0;
+}
+
+.texte-resto p {
+  margin-bottom: 0.5rem;
+}
+
+.coeur-resto {
+  flex: 1 1 auto;
+  text-align: end;
+  padding-right: 0.5rem;
+  position: absolute;
+  right: 1rem;
+  top: 30%;
+  font-size: 3rem;
+}
+
+.coeur-resto:hover {
+  transform: scale(1.04);
+  transition: 200ms;
+}
+
+.les-images-resto h4 {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.61);
+  right: 1rem;
+  background-color: #99e2d0;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.les-images-resto {
+  position: relative;
+}
+
+.condition-general {
+  margin-left: 2rem;
+}
+
+.footer-condition-general {
+  background-color: #333333;
+  padding: 1rem 0;
+  margin: -1rem;
+  margin-top: 2rem;
+}
+
+.footer-list p {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.footer-oh-my-food {
+  color: white;
+  font-family: "Shrikhand", cursive;
+  font-size: 2rem;
+}
+
+.condition-general ul {
+  padding-inline-start: 0px;
+}
+
+header {
+  margin: -1rem;
+}
+
+.titre {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.fa-map-marker-alt {
+  font-size: 1rem;
+}
+
+.sous-titre {
+  align-items: center;
+  background-color: #f2f2f2;
+  font-size: 2rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-weight: 700;
+}
+
+.sous-titre i {
+  font-size: 1.5rem;
+}
+
+.titre-menu {
+  text-align: center;
+  background-color: #f7f7f7ef;
+  padding: 2rem;
+}
+
+.titre-menu p {
+  font-size: 1.3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.recherche-restaurant {
+  text-align: center;
+}
+
+.recherche-restaurant a {
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 16px #0000002e;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.recherche-restaurant:hover {
+  transform: scale(1.03);
+  transition: 200ms;
+}
+
+.titre-menu h1 {
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
