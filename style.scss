@@ -2,6 +2,7 @@
 @use "sass/fonctionnement.scss";
 @use "sass/restaurants.scss";
 @use "sass/footer.scss";
+@use "sass/premiere-page-resto.scss";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700;900&family=Shrikhand&display=swap');
@@ -26,34 +27,35 @@ header {
   justify-content: center;
   gap: 1rem;
   font-weight: 700;
-}
-.sous-titre i {
+ i {
   font-size: 1.5rem;
+} 
 }
 .titre-menu {
   text-align: center;
   background-color: #f7f7f7ef;
   padding: 2rem;
-}
-.titre-menu p {
+ p {
   font-size: 1.3rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
+   h1 {
+    margin: 0;
+  }
+}
 }
 .recherche-restaurant {
   text-align: center;
-}
-.recherche-restaurant a {
+ a {
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0 0 16px #0000002e;
   font-size: 1.5rem;
   color: white;
+  background: linear-gradient(rgb(222, 165, 255), rgb(206, 171, 206));
+} 
 }
 .recherche-restaurant:hover {
   transform: scale(1.03);
   transition: 200ms;
-}
-.titre-menu h1 {
-  margin: 0;
 }
