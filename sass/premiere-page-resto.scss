@@ -7,64 +7,25 @@ width: 100%;
 object-fit: cover;
 object-position: center;
 }
-main.resto{
+main.restos{
     margin: 0;
     background-color: #f6f6f6;
 }
 .titre-du-resto h2{
     background-color: #f6f6f6;
     border-radius: 2rem 2rem 0 0;
-    font-family: Shrikhand,"cursive";
+    font-family: "Shrikhand","cursive";
     padding: 2rem 1rem;
     margin-top: -2rem;
     margin-bottom: 0;
     position: relative;
     font-size: 2rem;
-    i{
-        position: absolute;
-        right: 1rem;
-        top: 77%;
-        font-size: 2rem;
-        padding: 2rem 1rem;
-    }
 }
-.titre-du-resto i{
-    position: absolute;
-    right: 1rem;
-    top: 78%;
-    font-size: 2rem;
-    padding: 2rem 1rem;
-}
-section.menus{
+section.restos__menus{
     display: grid;
-    gap: 5rem;
+    gap: 2rem;
     grid-template-columns: repeat(3,1fr);
     margin: 0 1rem 1rem;
-}
-.list-entrees-prix{
-    display: flex;
-    background-color: #fff;
-    box-shadow: 2px 1px 8px -3px #7e7e7e;
-    border-radius: 1rem;
-    margin: 0 0 1rem;
-    overflow: hidden;
-    h4,p{
-        font-size: 1.2rem;
-        margin-left: 1rem;
-    }
-    h4{ 
-        margin-bottom: 0;
-    }
-    p{
-        margin-top: 0.5rem;
-    }
-}
-.list-plats-prix{
-    display: flex;
-    background-color: #fff;
-    box-shadow: 2px 1px 8px -3px #7e7e7e;
-    border-radius: 1rem;
-    margin: 0 0 1rem;
     h4{
         font-size: 1.2rem;
         margin-left: 1rem;   
@@ -76,24 +37,15 @@ section.menus{
         margin-top: 0.5rem;  
     }
 }
-.list-desserts-prix{
+.menu-item{
     display: flex;
     background-color: #fff;
     box-shadow: 2px 1px 8px -3px #7e7e7e;
     border-radius: 1rem;
-    margin: 0 0 1rem;
-    h4{
-        font-size: 1.2rem;
-        margin-left: 1rem; 
-        margin-bottom: 0;
-    }
-    p{
-        font-size: 1.2rem;
-        margin-left: 1rem; 
-        margin-top: 0.5rem;
-    }
+    margin: 0 1rem 1rem;
+    overflow: hidden;
 }
-.menu-prix{
+.menu-item__price{
     display: flex;
     align-items: flex-end;
     margin-left: auto;
@@ -113,19 +65,13 @@ section.menus{
     color: white;
     background: linear-gradient(rgb(222, 165, 255), rgb(206, 171, 206));
   } 
-}
-.commande-resto:hover{
+&:hover{
     transform: scale(1.03);
     transition: 200ms;
 }
-.footer-condition-general{
-    margin-top: 0;
 }
-@media (max-width: 1300px){
-    section.menus{
-        grid-template-columns: 1fr;
-        gap: 0.2rem;
-    }
+.footer{
+    margin-top: 0;
 }
 .coeur-resto-page,.coeur-resto-page-1 {
     flex: 1 1 auto;
@@ -138,21 +84,52 @@ section.menus{
     transition: all 300ms;
 }
   .coeur-resto-page-1{
-    color: #9356DC;
+    color: #ff79da;
     opacity: 0;
     &:hover{
       opacity: 1;
       transform: scale(1.08);
     }
 }
-  .menu-valide{
-      background-color: red;
+  .menu-item__checkmark{
       border-radius: 0 1rem 1rem 0;
       width: 4rem;
       margin-right: -4rem;
-      &:hover{
-          margin-right: 0;
-      }
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      background-color: #99e2d0;
 }
-
-
+.menu-item:hover .menu-item__checkmark{
+    margin-right: 0;
+    transition: margin-right .5s;
+}
+.fa-arrow-left{
+    display: flex;
+    font-size: 2rem;
+    padding: 2rem;
+}
+.titre__header{
+    display: flex;
+    font-family: "Shrikhand", cursive;
+    text-align: center;
+    font-size: 1.3rem;
+    h1{
+        margin: auto;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+@media (max-width: 1300px){
+    section.menus{
+        grid-template-columns: 1fr;
+        gap: 0.2rem;
+    }
+}
+.menu-item, .menu-item__description, .menu-plats, .restos__menus__entrees, .menu-desserts, .list-desserts{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

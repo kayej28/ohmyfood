@@ -11,7 +11,7 @@ header {
   margin: -1rem;
 }
 .titre {
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand", "cursive";
   text-align: center;
   font-size: 1.3rem;
 }
@@ -44,7 +44,7 @@ header {
   }
 }
 }
-.recherche-restaurant {
+.titre-menu__recherche-restaurant {
   text-align: center;
  a {
   padding: 1rem;
@@ -55,7 +55,7 @@ header {
   background: linear-gradient(rgb(222, 165, 255), rgb(206, 171, 206));
 } 
 }
-.recherche-restaurant:hover {
+.titre-menu__recherche-restaurant:hover {
   transform: scale(1.03);
   transition: 200ms;
 }
