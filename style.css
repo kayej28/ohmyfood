@@ -102,17 +102,17 @@ main h2 {
   color: black;
 }
 
-.texte-resto {
+.les-restaurants__texte {
   background-color: white;
   border-radius: 0 0 1rem 1rem;
   margin-left: 0.5rem;
   font-size: 1.3rem;
   position: relative;
 }
-.texte-resto h3 {
+.les-restaurants__texte h3 {
   margin-top: 0;
 }
-.texte-resto p {
+.les-restaurants__texte p {
   margin-bottom: 0.5rem;
 }
 
@@ -128,7 +128,7 @@ main h2 {
   padding: 0.5rem;
 }
 
-.coeur-resto, .coeur-resto-2 {
+.les-restaurants__coeur, .les-restaurants__coeur-2 {
   flex: 1 1 auto;
   text-align: end;
   padding-right: 0.5rem;
@@ -139,11 +139,11 @@ main h2 {
   transition: all 300ms;
 }
 
-.coeur-resto-2 {
+.les-restaurants__coeur-2 {
   color: #9356DC;
   opacity: 0;
 }
-.coeur-resto-2:hover {
+.les-restaurants__coeur-2:hover {
   opacity: 1;
   transform: scale(1.08);
 }
@@ -177,7 +177,7 @@ body {
   margin: 0;
 }
 
-.menilmontant-couverture-image {
+.bannier-image {
   height: 40rem;
   width: 100%;
   object-fit: cover;
@@ -189,7 +189,7 @@ main.restos {
   background-color: #f6f6f6;
 }
 
-.titre-du-resto h2 {
+.header__title-du-resto h2 {
   background-color: #f6f6f6;
   border-radius: 2rem 2rem 0 0;
   font-family: "Shrikhand", "cursive";
@@ -225,8 +225,7 @@ section.restos__menus p {
   margin: 0 1rem 1rem;
   overflow: hidden;
 }
-
-.menu-item__price {
+.menu-item .menu-item__price {
   display: flex;
   align-items: flex-end;
   margin-left: auto;
@@ -238,10 +237,10 @@ section.restos__menus p {
   padding: 5rem 0 8rem;
 }
 
-.commande-resto {
+.commande__commander {
   text-align: center;
 }
-.commande-resto a {
+.commande__commander a {
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0 0 16px #0000002e;
@@ -249,7 +248,7 @@ section.restos__menus p {
   color: white;
   background: linear-gradient(#dea5ff, #ceabce);
 }
-.commande-resto:hover {
+.commande__commander:hover {
   transform: scale(1.03);
   transition: 200ms;
 }
@@ -258,7 +257,7 @@ section.restos__menus p {
   margin-top: 0;
 }
 
-.coeur-resto-page, .coeur-resto-page-1 {
+.les-restaurants__coeur-page, .les-restaurants__coeur-page-1 {
   flex: 1 1 auto;
   text-align: end;
   padding-right: 0.5rem;
@@ -269,11 +268,11 @@ section.restos__menus p {
   transition: all 300ms;
 }
 
-.coeur-resto-page-1 {
+.les-restaurants__coeur-page-1 {
   color: #ff79da;
   opacity: 0;
 }
-.coeur-resto-page-1:hover {
+.les-restaurants__coeur-page-1:hover {
   opacity: 1;
   transform: scale(1.08);
 }
@@ -287,10 +286,21 @@ section.restos__menus p {
   place-items: center;
   background-color: #99e2d0;
 }
+.menu-item__checkmark i {
+  background: white;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+}
 
 .menu-item:hover .menu-item__checkmark {
   margin-right: 0;
   transition: margin-right 0.5s;
+}
+.menu-item:hover .menu-item__checkmark i {
+  animation: annim-check 0.5s ease;
 }
 
 .fa-arrow-left {
@@ -299,37 +309,45 @@ section.restos__menus p {
   padding: 2rem;
 }
 
-.titre__header {
+.header__title__header {
   display: flex;
   font-family: "Shrikhand", cursive;
   text-align: center;
   font-size: 1.3rem;
 }
-.titre__header h1 {
+.header__title__header h1 {
   margin: auto;
 }
-.titre__header a {
+.header__title__header a {
   text-decoration: none;
   color: black;
 }
 
 @media (max-width: 1300px) {
-  section.menus {
+  section.restos__menus {
     grid-template-columns: 1fr;
     gap: 0.2rem;
   }
 }
-.menu-item, .menu-item__description, .menu-plats, .restos__menus__entrees, .menu-desserts, .list-desserts {
+.menu-item, .menu-item__description, .resto__menu-plats, .restos__menus__entrees, .resto__menu-desserts, .menu-item__list-desserts {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
+@keyframes annim-check {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 header {
   margin: -1rem;
 }
 
-.titre {
+.header__title {
   font-family: "Shrikhand", "cursive";
   text-align: center;
   font-size: 1.3rem;
@@ -339,7 +357,7 @@ header {
   font-size: 1rem;
 }
 
-.sous-titre {
+.header__map {
   align-items: center;
   background-color: #f2f2f2;
   font-size: 2rem;
@@ -349,28 +367,28 @@ header {
   gap: 1rem;
   font-weight: 700;
 }
-.sous-titre i {
+.header__map i {
   font-size: 1.5rem;
 }
 
-.titre-menu {
+.header__title-menu {
   text-align: center;
   background-color: #f7f7f7ef;
   padding: 2rem;
 }
-.titre-menu p {
+.header__title-menu p {
   font-size: 1.3rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-.titre-menu p h1 {
+.header__title-menu p h1 {
   margin: 0;
 }
 
-.titre-menu__recherche-restaurant {
+.header__title-menu__recherche-restaurant {
   text-align: center;
 }
-.titre-menu__recherche-restaurant a {
+.header__title-menu__recherche-restaurant a {
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0 0 16px #0000002e;
@@ -379,7 +397,7 @@ header {
   background: linear-gradient(#dea5ff, #ceabce);
 }
 
-.titre-menu__recherche-restaurant:hover {
+.header__title-menu__recherche-restaurant:hover {
   transform: scale(1.03);
   transition: 200ms;
 }

@@ -3,6 +3,7 @@
 @use "sass/restaurants.scss";
 @use "sass/footer.scss";
 @use "sass/premiere-page-resto.scss";
+@use "sass/annimation.scss";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700;900&family=Shrikhand&display=swap');
@@ -10,7 +11,7 @@
 header {
   margin: -1rem;
 }
-.titre {
+.header__title {
   font-family: "Shrikhand", "cursive";
   text-align: center;
   font-size: 1.3rem;
@@ -18,7 +19,7 @@ header {
 .fa-map-marker-alt {
   font-size: 1rem;
 }
-.sous-titre {
+.header__map {
   align-items: center;
   background-color: #f2f2f2;
   font-size: 2rem;
@@ -31,7 +32,7 @@ header {
   font-size: 1.5rem;
 } 
 }
-.titre-menu {
+.header__title-menu {
   text-align: center;
   background-color: #f7f7f7ef;
   padding: 2rem;
@@ -44,7 +45,7 @@ header {
   }
 }
 }
-.titre-menu__recherche-restaurant {
+.header__title-menu__recherche-restaurant {
   text-align: center;
  a {
   padding: 1rem;
@@ -55,7 +56,7 @@ header {
   background: linear-gradient(rgb(222, 165, 255), rgb(206, 171, 206));
 } 
 }
-.titre-menu__recherche-restaurant:hover {
+.header__title-menu__recherche-restaurant:hover {
   transform: scale(1.03);
   transition: 200ms;
 }
