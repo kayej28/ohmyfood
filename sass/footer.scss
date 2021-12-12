@@ -1,21 +1,21 @@
-.footer__condition-general{
-    margin-left: 2rem;
-    ul{
-        padding-inline-start: 0px;
-    }
-}
 .footer {
-  background-color: rgb(51, 51, 51);
-  padding: 1rem 0;
-  margin: -1rem;
-  margin-top: 2rem;
-}
-.footer__list p{
-    color: white;
-    font-size: 1.3rem;
-}
-.footer__ohmyfood{
-    color: white;
-    font-family: "Shrikhand", cursive;
-    font-size: 2rem;
+    background-color: rgb(51, 51, 51);
+    padding: 1rem 0;
+    margin: -1rem;
+    margin-top: 2rem;
+    &__general-condition{
+        margin-left: 2rem;
+        ul{
+            padding-inline-start: 0px;
+        }
+    }
+    &__list p{
+        color: white;
+        font-size: 1.3rem;
+    }
+    &__ohmyfood{
+        color: white;
+        font-family: "Shrikhand", cursive;
+        font-size: 2rem;
+    }
 }

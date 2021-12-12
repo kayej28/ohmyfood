@@ -1,4 +1,4 @@
-.list-fonctionnement {
+.operation-list {
   font-size: 1.4rem;
   display: flex;
   gap: 5rem;
@@ -7,8 +7,23 @@
   p {
     position: relative;
   }
+  &__resto {
+    padding: 2rem 2rem;
+    align-items: center;
+    background-color: #f6f6f6;
+    border-radius: 1rem;
+    box-shadow: 2px 1px 8px -3px #7e7e7e;
+    display: flex;
+    gap: 1rem;
+    flex-basis: 20rem;
+    &:hover {
+      transform: scale(1.03);
+      background: linear-gradient(rgb(222, 165, 255), rgb(206, 171, 206));
+      transition: 200ms;
+    }
+  }
 }
-.list-fonctionnement p::before {
+.operation-list p::before {
   content: counter(etapes);
   counter-increment: etapes;
   background-color: #9356dc;
@@ -22,31 +37,15 @@
   left: 0;
   transform: translateX(-50%);
 }
-.list-fonctionnement__resto {
-  padding: 2rem 2rem;
-  align-items: center;
-  background-color: #f6f6f6;
-  border-radius: 1rem;
-  box-shadow: 2px 1px 8px -3px #7e7e7e;
-  display: flex;
-  gap: 1rem;
-  flex-basis: 20rem;
-  &:hover {
-    transform: scale(1.03);
-    background: linear-gradient(rgb(222, 165, 255), rgb(206, 171, 206));
-    transition: 200ms;
-  }
-}
 @media (max-width: 1300px) {
-  .list-fonctionnement {
+  .operation-list {
     flex-direction: column;
     gap: 0.5rem;
     padding-left: 3rem;
     font-size: 1.4rem;
   }
-}
-@media (max-width: 1300px){
-  .list-fonctionnement__resto{
+  .operation-list__resto{
     flex-basis: 1rem;
   }
 }
+
