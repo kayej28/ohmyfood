@@ -38,6 +38,14 @@ section.restos__menus {
   }
 }
 .menu-item {
+animation: annim-page 1s;
+animation-fill-mode: both;
+    @for $i from 1 through 3 {
+        &:nth-child(#{$i}){
+            animation-delay: 100ms 
+            * $i;
+        }
+    }
   display: flex;
   background-color: #fff;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
