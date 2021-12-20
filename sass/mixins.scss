@@ -1,0 +1,3 @@
+@mixin linear-gradient($color1:rgba(147,86,220,.9)) {
+    background: linear-gradient($color1, rgba(255,121,218,.9));
+}

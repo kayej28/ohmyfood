@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="homepage">
     <div class="loader">
         <i class="fas fa-spinner fa-pulse fa-5x"></i>
     </div>
@@ -34,22 +34,22 @@
         </div>
     </header>
     <section class="fonctionnement">
-    <h2>Fonctionnement</h2>
-    <div class="operation-list">
-        <p class="operation-list__resto">
-            <i class="fas fa-mobile-alt"></i>
-            Choisissez un restaurant
-        </p>
-        <p class="operation-list__resto">
-            <i class="fas fa-list"></i>
-            Composez votre menu
-        </p>
-        <p class="operation-list__resto">
-            <i class="fa-store fas tuto__icon"></i>
-            Dégustez au restaurant
-        </p>
-    </div>
-</section>
+        <h2>Fonctionnement</h2>
+        <div class="operation-list">
+            <p class="operation-list__resto">
+                <i class="fas fa-mobile-alt"></i>
+                Choisissez un restaurant
+            </p>
+            <p class="operation-list__resto">
+                <i class="fas fa-list"></i>
+                Composez votre menu
+            </p>
+            <p class="operation-list__resto">
+                <i class="fa-store fas tuto__icon"></i>
+                Dégustez au restaurant
+            </p>
+        </div>
+    </section>
     <main>
         <section class="cards">
             <h2>Restaurants</h2>
@@ -57,7 +57,7 @@
                 <div class="card">
                     <a href="./page-resto.html" class="card__link">
                         <h4>Nouveau</h4>
-                        <img class="menu-image" src="./images/cite rouge.jpg">
+                        <img class="menu-image" src="./images/cite rouge.jpg" alt="menu">
                         <footer class="card__texte">
                             <div>
                                 <h3>La palette du gout</h3>
@@ -66,7 +66,7 @@
                             <div class="card__heart">
                                 <i class="far fa-heart"></i>
                             </div>
-                            <div class="card__heart-2">
+                            <div class="card__heart-back">
                                 <i class="fas fa-heart"></i>
                             </div>
                         </footer>
@@ -75,7 +75,7 @@
                 <div class="card">
                     <a href="./page-resto.html" class="card__link">
                         <h4>Nouveau</h4>
-                        <img class="menu-image" src="./images/menilmontant.jpg">
+                        <img class="menu-image" src="./images/menilmontant.jpg" alt="menu">
                         <footer class="card__texte">
                             <div>
                                 <h3>La note enchantée</h3>
@@ -84,7 +84,7 @@
                             <div class="card__heart">
                                 <i class="far fa-heart"></i>
                             </div>
-                            <div class="card__heart-2">
+                            <div class="card__heart-back">
                                 <i class="fas fa-heart"></i>
                             </div>
                         </footer>
@@ -92,7 +92,7 @@
                 </div>
                 <div class="card">
                     <a href="./page-resto.html" class="card__link">
-                        <img class="menu-image" src="./images/charonne.jpg">
+                        <img class="menu-image" src="./images/charonne.jpg" alt="menu">
                         <footer class="card__texte">
                             <div>
                                 <h3>A la française</h3>
@@ -101,7 +101,7 @@
                             <div class="card__heart">
                                 <i class="far fa-heart"></i>
                             </div>
-                            <div class="card__heart-2">
+                            <div class="card__heart-back">
                                 <i class="fas fa-heart"></i>
                             </div>
                         </footer>
@@ -109,7 +109,7 @@
                 </div>
                 <div class="card">
                     <a href="./page-resto.html" class="card__link">
-                        <img class="menu-image" src="./images/folie-mericourt.jpg">
+                        <img class="menu-image" src="./images/folie-mericourt.jpg" alt="menu">
                         <footer class="card__texte">
                             <div>
                                 <h3>Le Délice des sens</h3>
@@ -118,7 +118,7 @@
                             <div class="card__heart">
                                 <i class="far fa-heart"></i>
                             </div>
-                            <div class="card__heart-2">
+                            <div class="card__heart-back">
                                 <i class="fas fa-heart"></i>
                             </div>
                         </footer>
@@ -130,14 +130,14 @@
     <footer class="footer">
         <div class="footer__general-condition">
             <span class="footer__ohmyfood">OhMyFood</span>
-            <ul class="footer__list">
+            <div class="footer__list">
                 <p><i class="fas fa-utensils" aria-hidden="true"></i>
                     Proposer un restaurant</p>
                 <p><i class="fas fa-hands-helping" aria-hidden="true"></i>
                     Devenir partenaire</p>
                 <p>Mentions légales</p>
                 <p>Contact</p>
-            </ul>
+            </div>
         </div>
     </footer>
 </body>

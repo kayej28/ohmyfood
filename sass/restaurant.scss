@@ -1,3 +1,4 @@
+@use "./mixins.scss";
 body {
   margin: 0;
 }
@@ -7,9 +8,45 @@ body {
   object-fit: cover;
   object-position: center;
 }
-main.restos {
+.restos {
   margin: 0;
   background-color: #f6f6f6;
+  &__menus {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 1rem 1rem;
+    h4 {
+      font-size: 1.2rem;
+      margin-left: 1rem;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-left: 1rem;
+      margin-top: 0.5rem;
+    }
+  }
+  &__menu__section,
+  &__menu__section * {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &__menu__section h2{
+  text-transform: uppercase;
+  position: relative;
+  padding: 1rem 0;
+  &::after{
+      content: "";
+      position: absolute;
+      top: 3.5rem;
+      left: 0;
+      height: 0.25rem;
+      width: 4.85rem;
+      background-color: #99e2d0;
+  }
+  }
 }
 .header__title-du-resto h2 {
   background-color: #f6f6f6;
@@ -20,22 +57,7 @@ main.restos {
   margin-bottom: 0;
   position: relative;
   font-size: 2rem;
-}
-section.restos__menus {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 0 1rem 1rem;
-  h4 {
-    font-size: 1.2rem;
-    margin-left: 1rem;
-    margin-bottom: 0;
-  }
-  p {
-    font-size: 1.2rem;
-    margin-left: 1rem;
-    margin-top: 0.5rem;
-  }
+  
 }
 .menu-item {
 animation: annim-page 1s;
@@ -97,7 +119,7 @@ animation-fill-mode: both;
     box-shadow: 0 0 16px #0000002e;
     font-size: 2rem;
     color: white;
-    background: linear-gradient(rgb(222, 165, 255), rgb(206, 171, 206));
+    @include mixins.linear-gradient;
   }
   &:hover {
     transform: scale(1.03);
@@ -108,8 +130,9 @@ animation-fill-mode: both;
 .footer {
   margin-top: 0;
 }
-.card__heart-page,
-.card__heart-page-1 {
+.page-resto
+.card__heart,
+.card__heart-back {
   flex: 1 1 auto;
   text-align: end;
   padding-right: 0.5rem;
@@ -118,9 +141,15 @@ animation-fill-mode: both;
   top: 80%;
   font-size: 3rem;
   transition: all 300ms;
+ #homepage &{
+     right: 0;
+ }
 }
-.card__heart-page-1 {
-  color: #ff79da;
+.card__heart-back {
+    @include mixins.linear-gradient;
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
   opacity: 0;
   &:hover {
     opacity: 1;
@@ -151,9 +180,6 @@ animation-fill-mode: both;
     gap: 0.2rem;
   }
 }
-.restos__menu__section,
-.restos__menu__section * {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.fa-check{
+    color: #99e2d0;;
 }

@@ -1,9 +1,10 @@
-@use "sass/base.scss";
-@use "sass/fonctionnement.scss";
-@use "sass/home-restaurants.scss";
-@use "sass/footer.scss";
-@use "sass/restaurant.scss";
-@use "sass/annimation.scss";
+@use "sass/mixins.scss";
+@use "sass/base";
+@use "sass/fonctionnement";
+@use "sass/home-restaurants";
+@use "sass/footer";
+@use "sass/restaurant";
+@use "sass/annimation";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700;900&family=Shrikhand&display=swap');
@@ -49,7 +50,7 @@
   box-shadow: 0 0 16px #0000002e;
   font-size: 1.5rem;
   color: white;
-  background: linear-gradient(rgb(222, 165, 255), rgb(206, 171, 206));
+  @include mixins.linear-gradient;
 } 
 }
 &__title-menu__research-restaurant:hover {
