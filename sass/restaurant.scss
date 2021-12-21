@@ -1,4 +1,4 @@
-@use "./mixins.scss";
+@use"./mixins.scss";
 body {
   margin: 0;
 }
@@ -44,7 +44,7 @@ body {
       left: 0;
       height: 0.25rem;
       width: 4.85rem;
-      background-color: #99e2d0;
+      @include mixins.background-green;
   }
   }
 }
@@ -88,7 +88,7 @@ animation-fill-mode: both;
     flex-shrink: 0;
     display: grid;
     place-items: center;
-    background-color: #99e2d0;
+    @include mixins.background-green;
     i {
       background: white;
       border-radius: 50%;
@@ -111,7 +111,6 @@ animation-fill-mode: both;
 }
 .ordered {
   padding: 5rem 0 8rem;
-&__order {
   text-align: center;
   a {
     padding: 1rem;
@@ -126,11 +125,9 @@ animation-fill-mode: both;
     transition: 200ms;
   }
 }
-}
 .footer {
   margin-top: 0;
 }
-.page-resto
 .card__heart,
 .card__heart-back {
   flex: 1 1 auto;
@@ -143,6 +140,7 @@ animation-fill-mode: both;
   transition: all 300ms;
  #homepage &{
      right: 0;
+     top: 30%;
  }
 }
 .card__heart-back {
@@ -181,5 +179,5 @@ color: transparent;
   }
 }
 .fa-check{
-    color: #99e2d0;;
+    @include mixins.color-green
 }

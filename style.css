@@ -135,27 +135,6 @@ main h2 {
   padding: 0.5rem;
 }
 
-.cards .card__heart,
-.card__heart-back {
-  flex: 1 1 auto;
-  text-align: end;
-  padding-right: 0.5rem;
-  position: absolute;
-  right: 1rem;
-  top: 30%;
-  font-size: 3rem;
-  transition: all 300ms;
-}
-
-.card__heart-back {
-  background: linear-gradient(rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  opacity: 0;
-}
-.card__heart-back:hover {
-  opacity: 1;
-  transform: scale(1.08);
-}
-
 .menu-image {
   width: 100%;
   object-fit: cover;
@@ -190,6 +169,11 @@ main h2 {
   color: white;
   font-family: "Shrikhand", cursive;
   font-size: 2rem;
+}
+.footer a {
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
 }
 
 body {
@@ -309,11 +293,9 @@ body {
 
 .ordered {
   padding: 5rem 0 8rem;
-}
-.ordered__order {
   text-align: center;
 }
-.ordered__order a {
+.ordered a {
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0 0 16px #0000002e;
@@ -321,7 +303,7 @@ body {
   color: white;
   background: linear-gradient(rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
-.ordered__order:hover {
+.ordered:hover {
   transform: scale(1.03);
   transition: 200ms;
 }
@@ -330,7 +312,7 @@ body {
   margin-top: 0;
 }
 
-.page-resto .card__heart,
+.card__heart,
 .card__heart-back {
   flex: 1 1 auto;
   text-align: end;
@@ -341,9 +323,10 @@ body {
   font-size: 3rem;
   transition: all 300ms;
 }
-#homepage .page-resto .card__heart,
+#homepage .card__heart,
 #homepage .card__heart-back {
   right: 0;
+  top: 30%;
 }
 
 .card__heart-back {
