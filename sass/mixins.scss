@@ -1,9 +1,10 @@
-@mixin linear-gradient($color1:rgba(147,86,220,.9)) {
-    background: linear-gradient($color1, rgba(255,121,218,.9));
+@use "./variables";
+@mixin linear-gradient($color1:variables.$secondary) {
+    background: linear-gradient($color1, variables.$tertiary);
 }
-@mixin color-green {
-    color: #99e2d0;
+@mixin color($color:variables.$primary) {
+    color: $color;
 }
-@mixin background-green{
-    background-color: #99e2d0;
+@mixin background($color:variables.$primary){
+    background-color: $color;
 }

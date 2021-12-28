@@ -65,14 +65,14 @@ main h2 {
 }
 .operation-list__resto:hover {
   transform: scale(1.03);
-  background: linear-gradient(rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background: linear-gradient(#9356dce6, #FF79DA);
   transition: 200ms;
 }
 
 .operation-list p::before {
   content: counter(etapes);
   counter-increment: etapes;
-  background-color: #9356dc;
+  background-color: #9356dce6;
   color: white;
   width: 2rem;
   height: 2rem;
@@ -99,7 +99,7 @@ main h2 {
 .card {
   background: white;
   border-radius: 1rem;
-  box-shadow: 0 0 16px #0000002e;
+  box-shadow: 0 0 16px black;
 }
 .card a {
   text-decoration: none;
@@ -128,7 +128,7 @@ main h2 {
 }
 .card__link h4 {
   position: absolute;
-  color: rgba(0, 0, 0, 0.61);
+  color: #1b6150;
   right: 1rem;
   background-color: #99e2d0;
   font-size: 1.5rem;
@@ -242,8 +242,8 @@ body {
   animation: annim-page 1s;
   animation-fill-mode: both;
   display: flex;
-  background-color: #fff;
-  box-shadow: 2px 1px 8px -3px #7e7e7e;
+  background-color: white;
+  box-shadow: 2px 1px 8px -3px gray;
   border-radius: 1rem;
   margin: 0 1rem 1rem;
   overflow: hidden;
@@ -301,7 +301,7 @@ body {
   box-shadow: 0 0 16px #0000002e;
   font-size: 2rem;
   color: white;
-  background: linear-gradient(rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background: linear-gradient(#9356dce6, #FF79DA);
 }
 .ordered:hover {
   transform: scale(1.03);
@@ -330,7 +330,7 @@ body {
 }
 
 .card__heart-back {
-  background: linear-gradient(rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background: linear-gradient(#9356dce6, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -372,21 +372,14 @@ body {
 }
 
 @keyframes annim-check {
-  0% {
+  from {
     transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
   }
 }
 @keyframes annim-page {
-  0% {
+  from {
     transform: translateY(50%);
     opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
   }
 }
 .header {
@@ -432,7 +425,7 @@ body {
   box-shadow: 0 0 16px #0000002e;
   font-size: 1.5rem;
   color: white;
-  background: linear-gradient(rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background: linear-gradient(#9356dce6, #FF79DA);
 }
 .header__title-menu__research-restaurant:hover {
   transform: scale(1.03);

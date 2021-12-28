@@ -1,4 +1,5 @@
 @use"./mixins.scss";
+@use"./variables.scss";
 body {
   margin: 0;
 }
@@ -10,7 +11,7 @@ body {
 }
 .restos {
   margin: 0;
-  background-color: #f6f6f6;
+  background-color: variables.$background;
   &__menus {
     display: grid;
     gap: 2rem;
@@ -44,12 +45,12 @@ body {
       left: 0;
       height: 0.25rem;
       width: 4.85rem;
-      @include mixins.background-green;
+      @include mixins.background;
   }
   }
 }
 .header__title-du-resto h2 {
-  background-color: #f6f6f6;
+  background-color: variables.$background;
   border-radius: 2rem 2rem 0 0;
   font-family: "Shrikhand", "cursive";
   padding: 2rem 1rem;
@@ -69,8 +70,8 @@ animation-fill-mode: both;
         }
     }
   display: flex;
-  background-color: #fff;
-  box-shadow: 2px 1px 8px -3px #7e7e7e;
+  background-color: variables.$background-tertiary;
+  box-shadow: 2px 1px 8px -3px variables.$dark-tertiary;
   border-radius: 1rem;
   margin: 0 1rem 1rem;
   overflow: hidden;
@@ -88,9 +89,9 @@ animation-fill-mode: both;
     flex-shrink: 0;
     display: grid;
     place-items: center;
-    @include mixins.background-green;
+    @include mixins.background;
     i {
-      background: white;
+      background: variables.$background-tertiary;
       border-radius: 50%;
       width: 2rem;
       height: 2rem;
@@ -117,7 +118,7 @@ animation-fill-mode: both;
     border-radius: 1rem;
     box-shadow: 0 0 16px #0000002e;
     font-size: 2rem;
-    color: white;
+    color: variables.$background-tertiary;
     @include mixins.linear-gradient;
   }
   &:hover {
@@ -169,7 +170,7 @@ color: transparent;
   }
   a {
     text-decoration: none;
-    color: black;
+    color: variables.$dark-secondary;
   }
 }
 @media (max-width: 1300px) {
@@ -179,5 +180,5 @@ color: transparent;
   }
 }
 .fa-check{
-    @include mixins.color-green
+    @include mixins.color
 }

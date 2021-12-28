@@ -5,6 +5,7 @@
 @use "sass/footer";
 @use "sass/restaurant";
 @use "sass/annimation";
+@use "sass/variables";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700;900&family=Shrikhand&display=swap');
@@ -18,7 +19,7 @@
 }
 &__map {
   align-items: center;
-  background-color: #f2f2f2;
+  background-color: variables.$background-secondary;
   font-size: 2rem;
   padding: 1.5rem;
   display: flex;
@@ -31,7 +32,7 @@
 }
 &__title-menu {
   text-align: center;
-  background-color: #f7f7f7ef;
+  background-color: variables.$background-primary;
   padding: 2rem;
  p {
   font-size: 1.3rem;
@@ -49,7 +50,7 @@
   border-radius: 1rem;
   box-shadow: 0 0 16px #0000002e;
   font-size: 1.5rem;
-  color: white;
+  color: variables.$background-tertiary;
   @include mixins.linear-gradient;
 } 
 }

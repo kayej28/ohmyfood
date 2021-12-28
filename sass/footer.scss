@@ -1,5 +1,6 @@
+@use "./variables.scss";
 .footer{
-background-color: rgb(51, 51, 51);
+background-color: variables.$dark;
 padding: 1rem 0;
 margin: -1rem;
 margin-top: 2rem;
@@ -10,16 +11,16 @@ margin-top: 2rem;
         }
     }
     &__list p{
-        color: white;
+        color: variables.$background-tertiary;
         font-size: 1.3rem;
     }
     &__ohmyfood{
-        color: white;
+        color: variables.$background-tertiary;
         font-family: "Shrikhand", cursive;
         font-size: 2rem;
     }
     a{
-        color: white;
+        color: variables.$background-tertiary;
         font-size: 1.3rem;
         text-decoration: none;
     }

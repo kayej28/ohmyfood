@@ -1,11 +1,12 @@
 @use "./mixins.scss";
+@use "./variables.scss";
 .card {
-  background: white;
+  background: variables.$background-tertiary;
   border-radius: 1rem;
-  box-shadow: 0 0 16px #0000002e;
+  box-shadow: 0 0 16px variables.$dark-secondary;
   a{
     text-decoration: none;
-    color: black;
+    color: variables.$dark-secondary;
   }
   &__placement {
     display: grid;
@@ -13,7 +14,7 @@
     gap: 2rem;
   }
   &__texte {
-    background-color: white;
+    background-color: variables.$background-tertiary;
     border-radius: 0 0 1rem 1rem;
     margin-left: 0.5rem;
     font-size: 1.3rem;
@@ -29,9 +30,9 @@
     position: relative;
     h4{
       position: absolute;
-      color: rgba(0, 0, 0, 0.61);
+      color: darken(variables.$primary,50%);
       right: 1rem;
-      background-color: #99e2d0;
+      background-color: variables.$primary;
       font-size: 1.5rem;
       padding: 0.5rem;
     }
