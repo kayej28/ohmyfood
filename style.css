@@ -227,14 +227,18 @@ body {
   background-color: #99e2d0;
 }
 
-.header__title-du-resto h2 {
-  background-color: #f6f6f6;
-  border-radius: 2rem 2rem 0 0;
-  font-family: "Shrikhand", "cursive";
+.header__title-du-resto {
+  display: flex;
+  justify-content: space-between;
   padding: 2rem 1rem;
   margin-top: -2rem;
   margin-bottom: 0;
+  background-color: #f6f6f6;
+  border-radius: 2rem 2rem 0 0;
   position: relative;
+}
+.header__title-du-resto h2 {
+  font-family: "Shrikhand", "cursive";
   font-size: 2rem;
 }
 
@@ -312,21 +316,24 @@ body {
   margin-top: 0;
 }
 
-.card__heart,
-.card__heart-back {
+.card__heart-container {
+  position: relative;
+}
+.card__heart-container .card__heart,
+.card__heart-container .card__heart-back {
   flex: 1 1 auto;
   text-align: end;
   padding-right: 0.5rem;
   position: absolute;
   right: 1rem;
-  top: 80%;
+  top: 1rem;
   font-size: 3rem;
   transition: all 300ms;
 }
-#homepage .card__heart,
-#homepage .card__heart-back {
+#homepage .card__heart-container .card__heart,
+#homepage .card__heart-container .card__heart-back {
   right: 0;
-  top: 30%;
+  top: -4rem;
 }
 
 .card__heart-back {
