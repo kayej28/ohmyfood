@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 .banner-image {
-  height: 40rem;
+  height: 25rem;
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -60,7 +60,7 @@ body {
   position: relative;
   h2 {
   font-family: "Shrikhand", "cursive";
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 }
 .menu-item {
@@ -114,11 +114,11 @@ animation-fill-mode: both;
   }
 }
 .ordered {
-  padding: 5rem 0 8rem;
+  padding: 5rem 0 5rem;
   text-align: center;
   a {
-    padding: 1rem;
-    border-radius: 1rem;
+    padding: 1rem 4rem;
+    border-radius: 2rem;
     box-shadow: 0 0 16px #0000002e;
     font-size: 2rem;
     color: variables.$background-tertiary;
@@ -141,8 +141,8 @@ position: relative;
   padding-right: 0.5rem;
   position: absolute;
   right: 1rem;
-  top: 1rem;
-  font-size: 3rem;
+  top: 1.3rem;
+  font-size: 2rem;
   transition: all 300ms;
  #homepage &{
      right: 0;
@@ -172,7 +172,7 @@ color: transparent;
   text-align: center;
   font-size: 1.3rem;
   h1 {
-    margin: auto;
+    margin: 1.5rem;
   }
   a {
     text-decoration: none;
