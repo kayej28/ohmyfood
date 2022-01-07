@@ -4,7 +4,7 @@
 @use "sass/home-restaurants";
 @use "sass/footer";
 @use "sass/restaurant";
-@use "sass/annimation";
+@use "sass/animation";
 @use "sass/variables";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
@@ -45,6 +45,7 @@
 }
 &__title-menu__research-restaurant {
   text-align: center;
+  transition: all 200ms;
  a {
   padding: 1rem;
   border-radius: 2rem;
@@ -56,7 +57,6 @@
 }
 &__title-menu__research-restaurant:hover {
   transform: scale(1.03);
-  transition: 200ms;
 }
 }
 .fa-map-marker-alt {

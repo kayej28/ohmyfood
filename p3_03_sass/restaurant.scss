@@ -64,7 +64,7 @@ body {
 }
 }
 .menu-item {
-animation: annim-page 1s;
+animation: anim-page 1s;
 animation-fill-mode: both;
     @for $i from 1 through 3 {
         &:nth-child(#{$i}){
@@ -108,7 +108,7 @@ animation-fill-mode: both;
     .menu-item:hover & {
       margin-right: 0;
       i {
-        animation: annim-check 0.5s ease;
+        animation: anim-check 0.5s ease;
       }
     }
   }
@@ -116,6 +116,7 @@ animation-fill-mode: both;
 .ordered {
   padding: 5rem 0 5rem;
   text-align: center;
+  transition: all 1s;
   a {
     padding: 1rem 4rem;
     border-radius: 2rem;
@@ -126,7 +127,6 @@ animation-fill-mode: both;
   }
   &:hover {
     transform: scale(1.03);
-    transition: 200ms;
   }
 }
 .footer {

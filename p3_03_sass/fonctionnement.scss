@@ -18,10 +18,10 @@
     display: flex;
     gap: 1rem;
     flex-basis: 20rem;
+    transition: all 200ms;
     &:hover {
       transform: scale(1.03);
       @include mixins.linear-gradient;
-      transition: 200ms;
     }
   }
 }
