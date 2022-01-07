@@ -1,0 +1,10 @@
+@use "./variables";
+@mixin linear-gradient($color1:variables.$secondary,$color2:variables.$tertiary) {
+    background: linear-gradient($color1,$color2);
+}
+@mixin color($color:variables.$primary) {
+    color: $color;
+}
+@mixin background($color:variables.$primary){
+    background-color: $color;
+}

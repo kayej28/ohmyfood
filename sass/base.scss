@@ -29,7 +29,7 @@ main {
   opacity: 0.9;
   animation: anim-home 2s 3s forwards;
   i{
-    animation: anim-home 2s forwards;
+    animation: fade-out 3s forwards;
   }
 }
 @keyframes anim-home{
@@ -42,8 +42,8 @@ main {
   }
 }
 @keyframes fade-out{
-  100%{
-    opacity: 0;
+  to{
+    transform: rotate(360deg);
 
   }
 }
